@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 1500px;
+}
+
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    width: 100%;
+}
+
+.container2 {
+    max-width: 290px;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 36px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 35px 30px;
+
+    .header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            a {
+                color: #151D48;
+                font-size: 36px;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            .form {
+                background: #f9fafb;
+                width: 413px;
+                padding: 2px 0 2px 24px;
+                border: 1px solid #f9fafb;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                gap: 3px;
+
+                img {
+                    cursor: pointer;
+                }
+
+                input {
+                    background: #f9fafb;
+                    width: 100%;
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:placeholder {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+
+            }
+
+            .div {
+                display: flex;
+                align-items: center;
+                gap: 3px;
+
+                h3 {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+
+            .id {
+                display: flex;
+                align-items: center;
+                gap: 18px;
+
+                .img {
+                    display: flex;
+                    align-items: start;
+                    width: 48px;
+                    background: #FFFAF1;
+                    border-radius: 8px;
+                    padding: 10px;
+                }
+
+                .img2 {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .img2__info {
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+
+                        div {
+                            h5 {
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+
+                            h6 {
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: #737791;
+                                margin-top: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    .main__container {
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0px;
+            margin: 40px 0 35px 0;
+
+            button {
+                padding: 8px;
+                width: 46px;
+                background: #5D5FEF;
+                border: 2px solid #FFFFFF;
+                border-radius: 8px;
+            }
+
+            a {
+                color: #151D48;
+                font-size: 30px;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+
+        .list {
+            margin-bottom: 50px;
+
+            li {
+                list-style-type: none;
+                margin-bottom: 29px;
+
+                .list__item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: #737791;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+
+            .list__item--btn {
+                border: 2px solid #FFFFFF;
+                color: #fff;
+                width: 210px;
+                padding: 10px 24px 10px 24px;
+                border-radius: 16px;
+                background: #5D5FEF;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .card {
+            background: url(../img/Background.png);
+            width: 230px;
+            height: 250px;
+            margin-bottom: 100px;
+            border-radius: 20px;
+            text-align: center;
+
+            .card__info {
+                padding-top: 31px;
+                color: #fff;
+
+                .img {
+                    background: #fff;
+                    width: 48px;
+                    height: 48px;
+                    text-align: center;
+                    margin: auto;
+                    border-radius: 16px;
+
+                    img {
+                        margin-top: 10px;
+                    }
+                }
+
+                h3 {
+                    margin: 8px 0;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 12px;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+                }
+
+                [href="#1"] {
+                    display: inline-block;
+                    width: 136px;
+                    padding: 8px 0px 8px 0px;
+                    border-radius: 8px;
+                    background: #fff;
+                    color: #5D5FEF;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
